@@ -1,0 +1,8 @@
+"man" or "help" - see this manual
+"do" - form a homework
+"hwl" - display all homeworks
+"submit" - submit the homework
+"check" - check the homework
+"sbs" - subscribe to a student
+"rdn" - read all notifications
+"exit" or "quit" - terminate session or application

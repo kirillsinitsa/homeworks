@@ -7,19 +7,8 @@ def task_3(text)
     str_to_cmp << string if string.include? 'Calling core with action:'
   end
   str_to_cmp = str_to_cmp.map { |string| to_time(time(string)) }
-  # puts str_to_cmp
-  if str_to_cmp.size == 2
-    difference(str_to_cmp[1], str_to_cmp[0])
-  else
-    '0'
-  end
-  # times = split_text(text).map { |string| to_time(time(string)) }.compact
-  # until times[1].nil?
-  #   curr = times.pop
-  #   rezult << "#{curr} - #{times.last} =
-  #              #{difference(curr.to_i, times.last.to_i)}"
-  # end
-  # rezult
+
+  str_to_cmp.size == 2 ? difference(str_to_cmp[1], str_to_cmp[0]) : '0'
 end
 
 def time(string)

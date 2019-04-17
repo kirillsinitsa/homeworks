@@ -13,7 +13,7 @@ def route(string)
 end
 
 def form(hash)
-  "#{hash[:date]} FROM: #{hash[:ip]} TO: #{hash[:route]}"
+  "#{hash[:date]} FROM: #{hash[:ip]} TO: #{hash[:route].upcase}"
 end
 
 def validate(hash)
@@ -24,7 +24,7 @@ def hash_from_text(text)
   text.lines.map do |string|
     {
       ip: ip(string),
-      route: route(string).upcase,
+      route: route(string),
       date: date(string)
     }
   end
